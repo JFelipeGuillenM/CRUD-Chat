@@ -1,0 +1,30 @@
+.container{
+    margin-top: 60px;
+}
+.contenido-mensaje{
+    resize: none;
+}
+.btn-guardar{
+    margin-top: 20px;
+}
+th, td{
+    text-align: center;
+    vertical-align:middle;
+}
+td{
+    max-width: 40px;
+    max-height: 50px;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+.fa-pencil{
+   color: rgb(22, 109, 190);
+   cursor: pointer;
+   font-size: 25px;
+}
+.fa-trash{
+    color: rgb(194, 2, 2);
+    cursor: pointer;
+    width: 50px;
+    font-size: 25px;
+}
