@@ -3,6 +3,12 @@ $(document).ready(function () {
     fetchDatos();
     fetchArbol(0);
 
+    $('#tb_datos').DataTable({
+        language: {
+            url: 'assets/lib/datatables/es-ES.json'
+        }
+    });
+
         $('#task-form').submit(function(e){
             if($('#nombre').val() != '' &&  $('#contenido').val() != ''){
                 const postData = {
@@ -125,7 +131,7 @@ function fetchArbol(id){
 
                $.each(parsed, function(i, item) {
                    //console.log(item.contenido);
-                   //console.log(item.id_principal);
+                   //   console.log(item.id_principal);
 
                    template += '<tr><td id="'+item.id_principal+'" onclick="fetchArbol('+item.id_principal+')">'+item.contenido+'</td></tr>'
 
