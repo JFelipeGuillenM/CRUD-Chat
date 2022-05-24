@@ -28,9 +28,9 @@ if($filas){
     $consulta2="CALL spRegistroBitacora('$usuario', '$fechaingreso', '$ip')";
     $resultado2=mysqli_query($conexion,$consulta2);
 
-    echo $resultado2;
+    //echo $resultado2;
 
-    //header("location:index.php");
+    header("location:index.php");
 
 }else{
     ?>
