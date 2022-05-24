@@ -109,7 +109,7 @@ if($varsession== null || $varsession== ''){
     <div class="container-fluid p-4">
         <div class="row d-flex justify-content-center align-items-center ">
             <div class="col-md-12 mt-4  p-2">
-                <table id="tb_datos">
+                <table id="tb_datos"  class="display">
                     <thead>
                         <tr>
                             <td scope="col" class="table-secondary">Id</td>

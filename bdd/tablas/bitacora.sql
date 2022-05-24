@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3307
--- Tiempo de generación: 24-05-2022 a las 07:15:14
+-- Tiempo de generación: 24-05-2022 a las 18:05:30
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -31,8 +31,20 @@ CREATE TABLE `bitacora` (
   `IdBitacora` int(11) NOT NULL,
   `UsuarioIngId` varchar(50) NOT NULL,
   `FechaIng` varchar(50) NOT NULL,
-  `Ip` varchar(50) DEFAULT NULL
+  `Ip` varchar(50) DEFAULT NULL,
+  `IngresoExitoso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `bitacora`
+--
+
+INSERT INTO `bitacora` (`IdBitacora`, `UsuarioIngId`, `FechaIng`, `Ip`, `IngresoExitoso`) VALUES
+(72, 'administrador', '05-24-2022 10:43:05 am', '190.110.47.13', 1),
+(73, 'admintester', '05-24-2022 11:04:32 am', '190.110.47.13', 1),
+(74, 'admintester', '05-24-2022 11:04:52 am', '190.110.47.13', 0),
+(75, 'administrador', '05-24-2022 11:05:04 am', '190.110.47.13', 0),
+(76, 'administrador', '05-24-2022 11:05:11 am', '190.110.47.13', 1);
 
 --
 -- Índices para tablas volcadas
@@ -52,7 +64,7 @@ ALTER TABLE `bitacora`
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `IdBitacora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `IdBitacora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
